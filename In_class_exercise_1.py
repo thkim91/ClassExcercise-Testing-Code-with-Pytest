@@ -1,6 +1,6 @@
-def cal_number_of_seconds(time_period, unit):
+def calc_number_of_seconds(time_period, unit):
     unit_list = ['second', 'minute', 'hour', 'day', 'week', 'month', 'year']
-    if time_perid >= 0:
+    if time_period >= 0:
         if unit in unit_list:
             if unit == 'second':
                 return time_period
