@@ -28,7 +28,7 @@ def test_gallon_liter():
     assert round(units, 2) == 7.57
 
 
-def test_gallon_liter():
+def test_fahrenheit_celsius():
     units = convert_units(75, "fahrenheit", "celsius")
     assert round(units, 2) == 23.89
 
