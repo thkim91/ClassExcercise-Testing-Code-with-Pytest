@@ -1,4 +1,6 @@
 import pytest
+from In_class_exercise_1 import *
+
 def test_year_to_sec():
     assert calc_number_of_seconds(5, "year") == 157680000
 
@@ -15,12 +17,11 @@ def test_hour_to_sec():
     assert calc_number_of_seconds(9, "hour") == 32400
 
 def test_minute_to_sec():
-    assert calc_number_of_seconds(10, "mintue") == 600
+    assert calc_number_of_seconds(10, "minute") == 600
 
 def test_second_to_sec():
     assert calc_number_of_seconds(11, "second") == 11
 
 def test_negative_input():
-    calc_number_of_seconds(-11, "second")
-    with pytest.raises(Expection):
-        1 / 0
+    with pytest.raises(Exception):
+        calc_number_of_seconds(-11, "second")
